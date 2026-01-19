@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "5ページ目.png",
+      "filename" : "５ページ目.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "5ページ目@2x.png",
+      "filename" : "５ページ目@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "5ページ目@3x.png",
+      "filename" : "５ページ目@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
