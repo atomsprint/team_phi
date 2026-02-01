@@ -49,16 +49,6 @@
 			path = "team-phi";
 			sourceTree = "<group>";
 		};
-		CEAE11C52EFF2E1200AA84D2 /* team-phiTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "team-phiTests";
-			sourceTree = "<group>";
-		};
-		CEAE11CF2EFF2E1200AA84D2 /* team-phiUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "team-phiUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				CEAE11AE2EFF2E0D00AA84D2 /* team-phi */,
-				CEAE11C52EFF2E1200AA84D2 /* team-phiTests */,
-				CEAE11CF2EFF2E1200AA84D2 /* team-phiUITests */,
 				CEAE11AD2EFF2E0D00AA84D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,9 +139,6 @@
 			dependencies = (
 				CEAE11C42EFF2E1200AA84D2 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CEAE11C52EFF2E1200AA84D2 /* team-phiTests */,
-			);
 			name = "team-phiTests";
 			packageProductDependencies = (
 			);
@@ -173,9 +158,6 @@
 			);
 			dependencies = (
 				CEAE11CE2EFF2E1200AA84D2 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CEAE11CF2EFF2E1200AA84D2 /* team-phiUITests */,
 			);
 			name = "team-phiUITests";
 			packageProductDependencies = (
