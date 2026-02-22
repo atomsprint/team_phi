@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,7 +51,7 @@
             <objects>
                 <viewController storyboardIdentifier="SecondViewController" id="bfM-Po-4ih" customClass="SecondViewController" customModule="team_phi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQk-ks-TLK">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-qP-q2F">
@@ -272,11 +273,48 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="保存して終了"/>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-K9-coV">
+                                <rect key="frame" x="66" y="498" width="86" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="ドア"/>
+                                    <segment title="窓"/>
+                                </segments>
+                                <connections>
+                                    <action selector="door_or_window:" destination="S3w-XW-rNT" eventType="valueChanged" id="d03-nu-ikz"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEV-UT-V8b">
+                                <rect key="frame" x="241" y="498" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="YKa-mr-7rG">
+                                    <children>
+                                        <command title="Item 1" id="yjH-Yc-Kjl"/>
+                                        <command title="Item 2" id="jFX-44-D8T"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-mq-kqV">
+                                <rect key="frame" x="241" y="498" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="cWB-WS-AM2">
+                                    <children>
+                                        <command title="Item 1" id="nEq-pe-V0Z"/>
+                                        <command title="Item 2" id="c18-GC-Ei7"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fka-ox-zgy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="YZq-IN-UKQ"/>
+                    <connections>
+                        <outlet property="door_select" destination="nEV-UT-V8b" id="j1p-9c-GUk"/>
+                        <outlet property="window_select" destination="DR8-mq-kqV" id="W7T-jp-Dtb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynM-5T-wEQ" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,7 +325,7 @@
             <objects>
                 <viewController storyboardIdentifier="FifthViewController" id="bsD-dH-vJX" customClass="FifthViewController" customModule="team_phi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LQE-aD-8jx">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-BQ-xts">
@@ -370,9 +408,9 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kZt-tD-iYT"/>
-        <segue reference="Rba-mJ-z51"/>
+        <segue reference="JNq-5R-dhb"/>
         <segue reference="PuX-bh-Lv7"/>
-        <segue reference="PRV-ut-NlH"/>
+        <segue reference="UI8-NM-DZi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
