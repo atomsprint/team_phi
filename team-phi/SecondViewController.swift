@@ -9,14 +9,14 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var dragView: UIView!
+    @IBOutlet weak var image: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
-        dragView.addGestureRecognizer(panGesture)
+        image.addGestureRecognizer(panGesture)
     }
     
     
@@ -33,16 +33,5 @@ class SecondViewController: UIViewController {
         gesture.setTranslation(.zero, in: view)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you w
-     ill often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
