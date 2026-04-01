@@ -9,14 +9,20 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var image: UIView!
+    @IBOutlet weak var image1: UIView!
+    @IBOutlet weak var image2: UIView!
+    @IBOutlet weak var image3: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
-        image.addGestureRecognizer(panGesture)
+        let panGesture1 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        image1.addGestureRecognizer(panGesture1)
+        let panGesture2 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        image2.addGestureRecognizer(panGesture2)
+        let panGesture3 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        image3.addGestureRecognizer(panGesture3)
     }
     
     
