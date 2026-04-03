@@ -18,13 +18,12 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dragView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-                dragView.backgroundColor = .systemBlue
-                dragView.isUserInteractionEnabled = true
-                view.addSubview(dragView)
+        let dragView = sofa_view
+        dragView!.isUserInteractionEnabled = true
+        view.addSubview(dragView!)
                 
-                let panGesture = UIPanGestureRecognizer(target: self, action: #selector(dragView(_:)))
-                dragView.addGestureRecognizer(panGesture)
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(dragView(_:)))
+        dragView?.addGestureRecognizer(panGesture)
             }
 
             @objc func dragView(_ sender: UIPanGestureRecognizer) {
