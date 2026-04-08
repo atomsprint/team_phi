@@ -19,18 +19,30 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
         
         let dragView = sofa_view
+        let dragView_2 = bed_view
+        let dragView_3 = chair_view
+        let dragView_4 = table_view
         dragView!.isUserInteractionEnabled = true
+        dragView_2!.isUserInteractionEnabled = true
+        dragView_3!.isUserInteractionEnabled = true
+        dragView_4!.isUserInteractionEnabled = true
         view.addSubview(dragView!)
-                
+        view.addSubview(dragView_2!)
+        view.addSubview(dragView_3!)
+        view.addSubview(dragView_4!)
+        
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(dragView(_:)))
         dragView?.addGestureRecognizer(panGesture)
+        dragView_2?.addGestureRecognizer(panGesture)
+        dragView_3?.addGestureRecognizer(panGesture)
+        dragView_4?.addGestureRecognizer(panGesture)
             }
+
 
             @objc func dragView(_ sender: UIPanGestureRecognizer) {
                 guard let targetView = sender.view else { return }
                 
                 let translation = sender.translation(in: view)
-                
                 targetView.center = CGPoint(
                     x: targetView.center.x + translation.x,
                     y: targetView.center.y + translation.y
