@@ -14,7 +14,7 @@
             <objects>
                 <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="team_phi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATm-sp-t0e">
@@ -339,7 +339,8 @@
                     <connections>
                         <outlet property="bed_view" destination="XHZ-Ai-WJo" id="LOE-cD-8mM"/>
                         <outlet property="chair_view" destination="zgL-Ss-l0P" id="7Mh-Fi-2D4"/>
-                        <outlet property="sofa_view" destination="XHZ-Ai-WJo" id="ohw-cb-Cal"/>
+                        <outlet property="sofa_View" destination="LQE-aD-8jx" id="ZWt-ME-Lgl"/>
+                        <outlet property="sofa_view" destination="PQX-pL-bBD" id="aLg-Ab-qYo"/>
                         <outlet property="table_view" destination="qVR-cG-dtq" id="qPq-SO-HJn"/>
                     </connections>
                 </viewController>
@@ -383,27 +384,27 @@
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比2" translatesAutoresizingMaskIntoConstraints="NO" id="yDX-uO-Qc6">
-                                <rect key="frame" x="212" y="306" width="156" height="95"/>
+                                <rect key="frame" x="21" y="530" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="E8K-4z-Tve">
                                 <rect key="frame" x="16" y="409" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比1" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-Lh-wS5" userLabel="Image1.5">
+                                <rect key="frame" x="212" y="306" width="156" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比2" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-fw-mAm">
+                                <rect key="frame" x="212" y="530" width="156" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-Rw-Vft">
-                                <rect key="frame" x="123" y="530" width="156" height="95"/>
+                                <rect key="frame" x="212" y="409" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比1" translatesAutoresizingMaskIntoConstraints="NO" id="b85-XU-b8B" userLabel="Image1">
                                 <rect key="frame" x="16" y="306" width="156" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比1" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-Lh-wS5" userLabel="Image1.5">
-                                <rect key="frame" x="0.0" y="530" width="156" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比2" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-fw-mAm">
-                                <rect key="frame" x="246" y="530" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -431,9 +432,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ロゴ" width="166.33332824707031" height="93.666664123535156"/>
-        <image name="黄金比1" width="479.33334350585938" height="310.66665649414062"/>
-        <image name="黄金比2" width="501.33334350585938" height="308.66665649414062"/>
-        <image name="黄金比3" width="501.33334350585938" height="313.33334350585938"/>
+        <image name="黄金比1" width="159.66667175292969" height="103.33333587646484"/>
+        <image name="黄金比2" width="167" height="102.66666412353516"/>
+        <image name="黄金比3" width="167" height="104.33333587646484"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
