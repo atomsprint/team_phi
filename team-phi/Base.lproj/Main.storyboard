@@ -336,6 +336,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="y7T-1b-FQV"/>
+                    <connections>
+                        <outlet property="bed_view" destination="XHZ-Ai-WJo" id="rkY-f5-LKe"/>
+                        <outlet property="chair_view" destination="zgL-Ss-l0P" id="EHI-3D-sjK"/>
+                        <outlet property="sofa_view" destination="PQX-pL-bBD" id="bag-WO-CyP"/>
+                        <outlet property="table_view" destination="qVR-cG-dtq" id="WJB-dR-nbZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ss4-vH-UAL" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,41 +14,34 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var chair_view: UIView!
     @IBOutlet weak var table_view: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dragView = sofa_view
-        let dragView_2 = bed_view
-        let dragView_3 = chair_view
-        let dragView_4 = table_view
-        dragView!.isUserInteractionEnabled = true
-        dragView_2!.isUserInteractionEnabled = true
-        dragView_3!.isUserInteractionEnabled = true
-        dragView_4!.isUserInteractionEnabled = true
-        view.addSubview(dragView!)
-        view.addSubview(dragView_2!)
-        view.addSubview(dragView_3!)
-        view.addSubview(dragView_4!)
+        // Do any additional setup after loading the view.
+        let panGesture1 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        sofa_view.addGestureRecognizer(panGesture1)
         
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(dragView(_:)))
-        dragView?.addGestureRecognizer(panGesture)
-        dragView_2?.addGestureRecognizer(panGesture)
-        dragView_3?.addGestureRecognizer(panGesture)
-        dragView_4?.addGestureRecognizer(panGesture)
-            }
-
-
-            @objc func dragView(_ sender: UIPanGestureRecognizer) {
-                guard let targetView = sender.view else { return }
-                
-                let translation = sender.translation(in: view)
-                targetView.center = CGPoint(
-                    x: targetView.center.x + translation.x,
-                    y: targetView.center.y + translation.y
-                )
-                
-                sender.setTranslation(.zero, in: view)
-            }
+        let panGesture2 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        bed_view.addGestureRecognizer(panGesture2)
+        
+        let panGesture3 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        chair_view.addGestureRecognizer(panGesture3)
+        
+        let panGesture15 = UIPanGestureRecognizer(target: self, action: #selector(handlepan(_:)))
+        table_view.addGestureRecognizer(panGesture15)
+    }
+    
+    
+    @objc func handlepan(_ gesture:UIPanGestureRecognizer) {
+        let translation = gesture.translation(in:view)
+        
+        if let gestureView = gesture.view{
+            gestureView.center = CGPoint(
+                x: gestureView.center.x + translation.x,
+                y: gestureView.center.y + translation.y
+            )
         }
-
+        
+        gesture.setTranslation(.zero, in: view)
+    }
+}
