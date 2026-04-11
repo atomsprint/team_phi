@@ -372,11 +372,11 @@
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比2" translatesAutoresizingMaskIntoConstraints="NO" id="yDX-uO-Qc6">
-                                <rect key="frame" x="21" y="409" width="156" height="95"/>
+                                <rect key="frame" x="212" y="306" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="E8K-4z-Tve">
-                                <rect key="frame" x="212" y="306" width="156" height="95"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比2" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-fw-mAm">
+                                <rect key="frame" x="246" y="540" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-Rw-Vft">
@@ -402,8 +402,8 @@
                                     <segue destination="bsD-dH-vJX" kind="show" id="6zN-mu-6We"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比2" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-fw-mAm">
-                                <rect key="frame" x="246" y="540" width="156" height="95"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="E8K-4z-Tve">
+                                <rect key="frame" x="21" y="418" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -418,6 +418,7 @@
                         <outlet property="image25" destination="UKN-Rw-Vft" id="BKX-5P-wfV"/>
                         <outlet property="image3" destination="E8K-4z-Tve" id="Dbe-H1-NSI"/>
                         <outlet property="image35" destination="tO9-fw-mAm" id="1Ur-gR-ZWT"/>
+                        <outlet property="roomview" destination="Xm0-3T-nWZ" id="sH5-ua-CPQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfU-CV-bo8" sceneMemberID="firstResponder"/>
