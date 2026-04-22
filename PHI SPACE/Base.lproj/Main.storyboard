@@ -77,8 +77,8 @@
                                 <state key="normal" title="↓"/>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-E3-Xv4">
-                                <rect key="frame" x="25" y="207" width="361" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="22" y="207" width="359" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="家具を配置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHT-xS-5Lm">
@@ -273,7 +273,7 @@
                                 <rect key="frame" x="195" y="622" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-g9-LZB">
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比1 " translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-g9-LZB">
                                 <rect key="frame" x="16" y="622" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -289,7 +289,7 @@
                                     <segue destination="gRJ-PO-8cm" kind="show" id="EIf-k4-7xq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比3" translatesAutoresizingMaskIntoConstraints="NO" id="loo-Mf-jxf">
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黄金比1 " translatesAutoresizingMaskIntoConstraints="NO" id="loo-Mf-jxf">
                                 <rect key="frame" x="16" y="496" width="156" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -391,8 +391,8 @@
     <resources>
         <image name="ロゴ" width="166.33332824707031" height="93.666664123535156"/>
         <image name="矢印" width="148.33332824707031" height="105"/>
+        <image name="黄金比1 " width="167" height="102.66666412353516"/>
         <image name="黄金比2" width="167" height="104.33333587646484"/>
-        <image name="黄金比3" width="167" height="104.33333587646484"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
