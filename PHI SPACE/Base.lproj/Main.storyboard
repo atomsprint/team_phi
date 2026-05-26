@@ -14,7 +14,7 @@
             <objects>
                 <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="PHI_SPACE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="s6u-pv-Rzg">
@@ -299,10 +299,9 @@
         <!--View Controller-->
         <scene sceneID="WLe-rc-TqH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FnG-Cm-wcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="gSO-TZ-mBA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B7R-ap-4Nc">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDC-72-5CR">
@@ -328,7 +327,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHb-Su-dhv">
-                                <rect key="frame" x="22" y="40" width="359" height="655"/>
+                                <rect key="frame" x="22" y="39" width="358" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
@@ -338,6 +337,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8Wl-pZ-rIk"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnG-Cm-wcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3555.2238805970146" y="148.97025171624713"/>
         </scene>
@@ -446,6 +446,15 @@
                                 <rect key="frame" x="16" y="309" width="361" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQZ-4Y-CIF">
+                                <rect key="frame" x="297" y="577" width="48" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                <connections>
+                                    <action selector="showAlertButtonTapped:" destination="xSb-Fx-ZAS" eventType="touchUpInside" id="HyT-a7-rr2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JLi-wJ-Vim"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
