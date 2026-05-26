@@ -14,7 +14,7 @@
             <objects>
                 <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="PHI_SPACE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="s6u-pv-Rzg">
@@ -61,7 +61,7 @@
             <objects>
                 <viewController storyboardIdentifier="ThirdViewController" id="gRJ-PO-8cm" customClass="ThirdViewController" customModule="PHI_SPACE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FmU-Xa-fhI">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx5-4r-JFX">
@@ -82,6 +82,9 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <connections>
+                                    <segue destination="scG-4P-sod" kind="show" id="NaH-fu-3jK"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="fwQ-0w-oLM">
                                 <rect key="frame" x="90" y="-38" width="213" height="207"/>
@@ -210,7 +213,7 @@
             <objects>
                 <viewController id="scG-4P-sod" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lLo-Bz-SW7">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRq-vu-iqQ">
@@ -394,15 +397,19 @@
                         <viewLayoutGuide key="safeArea" id="1yg-tT-kYF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NPZ-JK-kGQ"/>
+                    <connections>
+                        <segue destination="gRJ-PO-8cm" kind="show" identifier="toCanvas" id="qSa-tT-Fcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbL-UX-IiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4456.7164179104475" y="148.97025171624713"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="WLe-rc-TqH">
             <objects>
-                <viewController id="gSO-TZ-mBA" sceneMemberID="viewController">
+                <viewController id="gSO-TZ-mBA" customClass="ThirdViewController" customModule="PHI_SPACE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B7R-ap-4Nc">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -591,6 +598,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="qSa-tT-Fcf"/>
         <segue reference="XSV-Kj-3fM"/>
         <segue reference="vV4-Gr-XB9"/>
         <segue reference="lgk-rh-Jho"/>
