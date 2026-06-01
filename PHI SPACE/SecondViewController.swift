@@ -53,6 +53,9 @@ class SecondViewController: UIViewController {
                 // 2-B. 横からスライドして進みたい場合（NavigationControllerを使っている場合）
                  self.navigationController?.pushViewController(nextVC, animated: true)
             }
+            let texthight = CGFloat( Double(self.highttextField.text ?? "") ?? 300)
+            let textwidth = CGFloat( Double(self.widthtextField.text ?? "") ?? 300)
+            self.performSegue(withIdentifier: "toCanvas", sender:(textwidth, texthight))
         }
         
         // キャンセルボタンの処理
@@ -67,6 +70,16 @@ class SecondViewController: UIViewController {
         
         // 5. 画面にアラートを表示する
         present(alert, animated: true, completion: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "toCanvas",
+           let nextVC = segue.destination as? CanvasViewController,
+           let size = sender as? (CGFloat, CGFloat){
+            
+            nextVC.inputWidth = size.0
+            nextVC.inputHight = size.1
+        }
+        
     }
 }
 
